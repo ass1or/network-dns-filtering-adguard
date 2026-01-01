@@ -1,0 +1,1 @@
+# network-dns-filtering-adguard
