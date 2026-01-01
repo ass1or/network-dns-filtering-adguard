@@ -41,13 +41,13 @@ services:
       - "53:53/tcp"
       - "53:53/udp"
       - "80:80/tcp"
-
+```
 
 ### Network Hardening (Mikrotik)
 To ensure all traffic is filtered, I implemented a Destination NAT rule on the Mikrotik router to intercept any DNS requests (port 53) trying to bypass the local server (e.g., hardcoded Google DNS 8.8.8.8 on IoT devices) and redirect them forcibly to AdGuard.
 
  ### Results & Monitoring
-(dashboard.png)
+![AdGuard Dashboard](dashboard.png)
 
 Dashboard showing blocked tracking requests and network activity analysis.
 
